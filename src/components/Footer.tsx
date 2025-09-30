@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
           <h3 className="text-3xl font-bold mb-6 gradient-text">Ready to Get Started?</h3>
           <Button variant="hero" size="lg" className="text-lg px-8 py-6" asChild>
-            <a href="https://airtable.com/your-form-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://airtable.com/appopz4GXqkTszuJ7/pagFV1XnMmmI8Zb4l/form" target="_blank" rel="noopener noreferrer">
               Register Now
               <ArrowRight className="ml-2" />
             </a>

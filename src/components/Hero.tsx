@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="lg" className="text-lg px-8 py-6 min-w-[200px]" asChild>
-              <a href="https://airtable.com/your-form-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://airtable.com/appopz4GXqkTszuJ7/pagFV1XnMmmI8Zb4l/form" target="_blank" rel="noopener noreferrer">
                 Register Now
                 <ArrowRight className="ml-2" />
               </a>
