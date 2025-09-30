@@ -19,9 +19,6 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
-          <div className="flex justify-center mb-8 animate-fade-in">
-            <img src={mulearnLogo} alt="µLearn Logo" className="h-24 md:h-32 w-auto" />
-          </div>
           <h1 className="text-5xl md:text-7xl font-bold gradient-text mb-4 animate-fade-in">
             Hacktoberfest 2025 with µLearn
           </h1>
