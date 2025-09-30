@@ -1,0 +1,69 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ExternalLink } from "lucide-react";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
+
+const partners = [
+  {
+    name: "µLearn Foundation",
+    links: [
+      { icon: FaLinkedin, url: "https://www.linkedin.com/company/mulearn/", label: "LinkedIn" },
+      { icon: FaInstagram, url: "https://www.instagram.com/mulearn.official", label: "Instagram" },
+    ],
+  },
+  {
+    name: "µLearn SCTCE",
+    links: [{ icon: FaInstagram, url: "https://www.instagram.com/sctce_mulearn", label: "Instagram" }],
+  },
+  {
+    name: "Inovus Labs",
+    links: [
+      { icon: FaLinkedin, url: "https://www.linkedin.com/company/inovuslabs", label: "LinkedIn" },
+      { icon: FaInstagram, url: "https://www.instagram.com/inovuslabs", label: "Instagram" },
+    ],
+  },
+  {
+    name: "Purple Movement",
+    links: [{ icon: FaInstagram, url: "https://www.instagram.com/tpm.live", label: "Instagram" }],
+  },
+];
+
+const Partners = () => {
+  return (
+    <section id="partners" className="py-20 px-4">
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">Community Partners</h2>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {partners.map((partner, index) => (
+            <Card
+              key={index}
+              className="border-border hover:border-accent/50 transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 text-center"
+            >
+              <CardHeader>
+                <CardTitle className="text-lg">{partner.name}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex justify-center gap-4">
+                  {partner.links.map((link, linkIndex) => (
+                    <a
+                      key={linkIndex}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                      aria-label={`${partner.name} ${link.label}`}
+                    >
+                      <link.icon className="h-6 w-6" />
+                    </a>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Partners;
