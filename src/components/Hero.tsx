@@ -2,6 +2,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-hacktoberfest.jpg";
 import mulearnLogo from "@/assets/mulearn-hero-logo.png";
+import mulearnPartnerLogo from "@/assets/mulearn-logo.png";
+import mulearnSctceLogo from "@/assets/mulearn-sctce-logo.png";
+import purpleMovementLogo from "@/assets/purple-movement-logo.png";
+import inovusLogo from "@/assets/inovus-logo.png";
 
 const Hero = () => {
   return (
@@ -24,6 +28,14 @@ const Hero = () => {
           <p className="text-xl md:text-3xl text-foreground/90 font-light mb-8">
             Code. Contribute. Celebrate Open Source.
           </p>
+          
+          {/* Partner Logos */}
+          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 mb-8 opacity-80">
+            <img src={mulearnPartnerLogo} alt="µLearn Foundation" className="h-12 md:h-16 w-auto object-contain" />
+            <img src={mulearnSctceLogo} alt="µLearn SCTCE" className="h-12 md:h-16 w-auto object-contain" />
+            <img src={inovusLogo} alt="Inovus Labs" className="h-12 md:h-16 w-auto object-contain" />
+            <img src={purpleMovementLogo} alt="Purple Movement" className="h-12 md:h-16 w-auto object-contain" />
+          </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="lg" className="text-lg px-8 py-6 min-w-[200px]" asChild>
               <a href="https://airtable.com/your-form-link" target="_blank" rel="noopener noreferrer">
