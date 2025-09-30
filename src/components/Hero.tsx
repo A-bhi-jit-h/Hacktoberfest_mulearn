@@ -23,20 +23,24 @@ const Hero = () => {
           
           {/* Logos at top center with sideways movement */}
           <div className="flex justify-center items-center gap-6 mb-6 relative">
-            <img
-              src={hfLogo}
-              alt="Hacktoberfest Logo"
-              className="h-16 md:h-20 w-auto object-contain animate-fade-in relative -left-6"
-            />
-            <img
-              src={mulearnLogo}
-              alt="µLearn Logo"
-              className="h-10 md:h-14 w-auto object-contain animate-fade-in relative left-6 top-2" // ✅ moved down
-            />
+            <a href="https://hacktoberfest.com/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={hfLogo}
+                alt="Hacktoberfest Logo"
+                className="h-16 md:h-20 w-auto object-contain animate-fade-in relative -left-6"
+              />
+            </a>
+            <a href="https://mulearn.org/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={mulearnLogo}
+                alt="µLearn Logo"
+                className="h-10 md:h-14 w-auto object-contain animate-fade-in relative left-6 top-2" // ✅ moved down
+              />
+            </a>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold gradient-text mb-4 animate-fade-in">
-            Hacktoberfest 2025 with µLearn
+            Hacktoberfest 2025 
           </h1>
           <p className="text-xl md:text-3xl text-foreground/90 font-light mb-8">
             Code. Contribute. Celebrate Open Source.
