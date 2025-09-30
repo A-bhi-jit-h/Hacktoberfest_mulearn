@@ -7,23 +7,23 @@ const partners = [
     name: "µLearn Foundation",
     links: [
       { icon: FaLinkedin, url: "https://www.linkedin.com/company/mulearn/", label: "LinkedIn" },
-      { icon: FaInstagram, url: "https://www.instagram.com/mulearn.official", label: "Instagram" },
+      { icon: FaInstagram, url: "https://www.instagram.com/mulearn.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", label: "Instagram" },
     ],
   },
   {
     name: "µLearn SCTCE",
-    links: [{ icon: FaInstagram, url: "https://www.instagram.com/sctce_mulearn", label: "Instagram" }],
+    links: [{ icon: FaInstagram, url: "https://www.instagram.com/sctce_mulearn?igsh=d2x4empqc2RudXE=", label: "Instagram" }],
   },
   {
     name: "Inovus Labs",
     links: [
       { icon: FaLinkedin, url: "https://www.linkedin.com/company/inovuslabs", label: "LinkedIn" },
-      { icon: FaInstagram, url: "https://www.instagram.com/inovuslabs", label: "Instagram" },
+      { icon: FaInstagram, url: "https://www.instagram.com/inovuslabs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", label: "Instagram" },
     ],
   },
   {
     name: "Purple Movement",
-    links: [{ icon: FaInstagram, url: "https://www.instagram.com/tpm.live", label: "Instagram" }],
+    links: [{ icon: FaInstagram, url: "https://www.instagram.com/tpm.live?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", label: "Instagram" }],
   },
 ];
 
