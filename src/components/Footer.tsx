@@ -17,7 +17,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-border/50">
           <p className="text-muted-foreground">
-            Built with <span className="text-accent">❤️</span> for Hacktoberfest 2025
+            
           </p>
         </div>
       </div>
