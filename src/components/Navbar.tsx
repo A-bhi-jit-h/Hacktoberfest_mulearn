@@ -47,7 +47,7 @@ const Navbar = () => {
               Support
             </button>
             <Button variant="hero" size="lg" asChild>
-              <a href="https://airtable.com/your-form-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://airtable.com/appopz4GXqkTszuJ7/pagFV1XnMmmI8Zb4l/form" target="_blank" rel="noopener noreferrer">
                 Register Now
               </a>
             </Button>

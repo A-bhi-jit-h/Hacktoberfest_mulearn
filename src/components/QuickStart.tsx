@@ -13,8 +13,6 @@ const steps = [
     icon: GitBranch,
     title: "Step 2: Choose a Repository",
     description: "Review the contribution guide for karma, rules, and PR guidelines",
-    link: "https://www.notion.so/Repository-Contribution-Guide-27a38f23e2dc803194d8f0fd85a71559?pvs=21",
-    linkText: "View Contribution Guide",
   },
   {
     icon: Users,
