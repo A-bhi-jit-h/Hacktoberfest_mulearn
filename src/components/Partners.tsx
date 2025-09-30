@@ -1,10 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink } from "lucide-react";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import mulearnLogo from "@/assets/mulearn-logo.png";
+import mulearnSctceLogo from "@/assets/mulearn-sctce-logo.png";
+import inovusLogo from "@/assets/inovus-logo.png";
+import purpleMovementLogo from "@/assets/purple-movement-logo.png";
 
 const partners = [
   {
     name: "µLearn Foundation",
+    logo: mulearnLogo,
     links: [
       { icon: FaLinkedin, url: "https://www.linkedin.com/company/mulearn/", label: "LinkedIn" },
       { icon: FaInstagram, url: "https://www.instagram.com/mulearn.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", label: "Instagram" },
@@ -12,10 +17,12 @@ const partners = [
   },
   {
     name: "µLearn SCTCE",
+    logo: mulearnSctceLogo,
     links: [{ icon: FaInstagram, url: "https://www.instagram.com/sctce_mulearn?igsh=d2x4empqc2RudXE=", label: "Instagram" }],
   },
   {
     name: "Inovus Labs",
+    logo: inovusLogo,
     links: [
       { icon: FaLinkedin, url: "https://www.linkedin.com/company/inovuslabs", label: "LinkedIn" },
       { icon: FaInstagram, url: "https://www.instagram.com/inovuslabs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", label: "Instagram" },
@@ -23,6 +30,7 @@ const partners = [
   },
   {
     name: "Purple Movement",
+    logo: purpleMovementLogo,
     links: [{ icon: FaInstagram, url: "https://www.instagram.com/tpm.live?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", label: "Instagram" }],
   },
 ];
@@ -39,7 +47,10 @@ const Partners = () => {
               key={index}
               className="border-border hover:border-accent/50 transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 text-center"
             >
-              <CardHeader>
+              <CardHeader className="pb-4">
+                <div className="flex justify-center mb-4">
+                  <img src={partner.logo} alt={`${partner.name} logo`} className="h-16 w-auto object-contain" />
+                </div>
                 <CardTitle className="text-lg">{partner.name}</CardTitle>
               </CardHeader>
               <CardContent>
